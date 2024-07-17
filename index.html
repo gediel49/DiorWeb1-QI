@@ -1,35 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0.8">
-<title>DIOR - Login</title>
-<link rel="stylesheet" href="/Css/login.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIOR - Store</title>
+    <link rel="stylesheet" href="/Css/store.css">
 </head>
 <body>
+    <div class="logo">
+        <img src="/Imagens/DiorLogo.png" alt="DIOR Logo">
+        <div class="search-icon">
+            <img src="/Imagens/lupa.png" alt="Search" onclick="toggleSearchBar()">
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-bar" placeholder="Digite o que procura...">
+        </div>
 
-  
-<h1>Páginas da DIOR - Trabalho QI</h1>
+        <div class="atalhos">
+            <img src="/Imagens/Atalhos.png" alt="at">
+        </div>
 
-<style>
-  .cad {
-    font-size: 20px;
-    padding: 10px 20px;
-    background-color: #3498db; 
-    color: #ffffff; 
-    border: none; 
-    border-radius: 5px; 
-  }
-</style>
+        <div class="defic">
+            <img src="/Imagens/defic.png" alt="def">
+        </div>
+
+    </div>
+
+    <div class="navbar">
+        <b><a href="#perfumes">Perfumes</a></b>
+        <b><a href="#maquiagens">Maquiagens</a></b>
+        <b><a href="#moda">Moda e acessórios</a></b>
+        <b><a href="#banho">Banho e corpo</a></b>
+        <b><a href="#sobre">Sobre DIOR</a></b>
+    </div>
+
+    <script>
+        function toggleSearchBar() {
+            const searchBar = document.querySelector('.search-bar');
+            searchBar.classList.toggle('show');
+        }
+    </script>
 
 
-<form action="/Páginas/store.html">
-  <input type="submit" value="Store" class="cad">
-</form>
+
+<main> 
+
+    <div class="container">
 
 
+        <div class="tend">
+            <h1><b>TENDÊNCIAS</b></h1>
+          </div>
 
+
+        <div class="fragancias">
+            <h2>Fragâncias</h2>
+        </div>
+
+        <div class="article-container">
+            <article>
+                <img src="/Imagens/Perfume1.png" alt="Perfume">
+                <div>
+                    <a href="#">
+                        <img src="../Imagens/compraButton.png" alt="a">
+                    </a>
+                </div>
+            </article>
+
+            <article>
+                <img src="/Imagens/Perfume2.png" alt="Perfume">
+                <div>
+                    <a href="../Páginas/product.html">
+                        <img src="../Imagens/compraButton.png" alt="a">
+                    </a>
+                </div>
+            </article>
+
+            <article>
+                <img src="/Imagens/Perfume3.png" alt="Perfume">
+                <div>
+                    <a href="#">
+                        <img src="../Imagens/compraButton.png" alt="a">
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="setaEsq">
+        <img src="/Imagens/setaEsq.png" alt="sesq">
+    </div>
+
+    <div class="setaDir">
+        <img src="/Imagens/setaDir.png" alt="sdir">
+    </div>
+
+    <div class="chat">
+        <img src="/Imagens/chat.png" alt="chat">
+    </div>
+
+    </main>
 </body>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIOR - Store</title>
+    <link rel="stylesheet" href="/Css/productDesc.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="/Imagens/DiorLogo.png" alt="DIOR Logo">
+        <div class="search-icon">
+            <img src="/Imagens/lupa.png" alt="Search" onclick="toggleSearchBar()">
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-bar" placeholder="Digite o que procura...">
+        </div>
+        <div class="atalhos">
+            <img src="/Imagens/Atalhos.png" alt="at">
+        </div>
+        <div class="defic">
+            <img src="/Imagens/defic.png" alt="def">
+        </div>
+    </div>
+
+    <div class="navbar">
+        <b><a href="#perfumes">Perfumes</a></b>
+        <b><a href="#maquiagens">Maquiagens</a></b>
+        <b><a href="#moda">Moda e acessórios</a></b>
+        <b><a href="#banho">Banho e corpo</a></b>
+        <b><a href="#sobre">Sobre DIOR</a></b>
+    </div>
+
+    <main>
+        <div class="textos">
+            <h1><b>Descrição</b></h1>
+            <p>A bruma perfumada para o cabelo La Collection Privée
+                Christian Dior envolve o cabelo nas notas florais e
+                almiscaradas de Rose Kabuki, sublimando-o com um luminoso
+                véu de beleza. Num gesto elegante, a bruma perfumada realça
+                o cabelo com o rastro delicado e intenso de Rose Kabuki, que
+                destaca a frescura das notas de rosa empoada, sublinhadas
+                pelo poder das notas de almíscar. Uma só vaporização desta
+                bruma liberta uma nuvem perfumada leve e generosa para um
+                agradável momento sensorial. Evitar vaporizar para os olhos e
+                as mucosas (nariz, boca, etc.)</p>
+        </div>
+
+        <div class="imgPerf">
+            <img src="../Imagens/Perfume2.png" alt="Perfume2">
+        </div>
+
+<div class="dcapl">
+<h2>Dicas de aplicação:</h2>
+</div>
+
+
+
+    </main>
+    <div class="setinha">
+        <img src="../Imagens/Setinha.png" alt="setinha">
+    </div>
+
+    <div class="chat">
+        <img src="/Imagens/chat.png" alt="chat">
+    </div>
+
+    <script>
+        function toggleSearchBar() {
+            const searchBar = document.querySelector('.search-bar');
+            searchBar.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* Importando a família de fontes 'Inter' do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Resetando margens, preenchimentos e caixa-modelo para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif; /* Definindo a família de fontes padrão para todos os elementos */
+}
+
+/* Estilo para o elemento body */
+body {
+  font-family: 'Times New Roman', serif; /* Sobrescrevendo a fonte padrão para o corpo do texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupando toda a altura da viewport */
+  margin: 0; /* Removendo margem padrão */
+}
+
+/* Estilo para o contêiner principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; /* Definindo largura do contêiner para 80% da viewport */
+  max-width: 900px; /* Definindo largura máxima para telas maiores */
+}
+
+/* Estilo para a classe logo */
+.logo {
+  width: 98%; /* Definindo largura do logo para 98% */
+  display: flex;
+  justify-content: start; /* Alinhando o conteúdo do logo à esquerda */
+  align-items: center;
+  padding: 1px;
+  position: fixed; /* Fixando a posição do logo */
+  top: 0; /* Posicionando no topo da viewport */
+}
+
+/* Estilo para a classe .atalhos */
+.atalhos {
+  position: absolute; /* Posicionando o elemento absolutamente */
+  right: 0; /* Alinhando à direita */
+  margin-right: 20px; /* Adicionando margem à direita */
+}
+
+/* Estilo para a classe .defic */
+.defic {
+  position: absolute; /* Posicionando o elemento absolutamente */
+  right: 0; /* Alinhando à direita */
+  margin-right: 20px; /* Adicionando margem à direita */
+  margin-top: 300px; /* Adicionando margem do topo */
+}
+
+/* Estilo para a classe .chat */
+.chat {
+  position: absolute; /* Posicionando o elemento absolutamente */
+  right: 0; /* Alinhando à direita */
+  top: 800px; /* Posicionando 800px abaixo do topo */
+}
+
+/* Estilo para o ícone de pesquisa */
+.search-icon {
+  cursor: pointer; /* Mudando o cursor para ponteiro ao passar por cima */
+  margin-left: 10px; /* Adicionando margem à esquerda do ícone */
+}
+
+.search-icon img {
+  width: 67px; /* Definindo largura da imagem do ícone */
+  height: auto; /* Permitindo que a altura se ajuste proporcionalmente */
+}
+
+/* Estilo para a barra de pesquisa */
+.search-bar {
+  position: absolute; /* Posicionando a barra de pesquisa absolutamente */
+  left: 290px; /* Posicionando 290px à partir da esquerda */
+  top: 15px; /* Posicionando 15px do topo */
+  border: 1px solid #ccc; /* Adicionando borda com cor */
+  border-radius: 25px; /* Adicionando borda arredondada */
+  padding: 9px 10px; /* Adicionando preenchimento dentro da barra de pesquisa */
+  display: none; /* Inicialmente escondendo a barra de pesquisa */
+}
+
+.search-bar.show {
+  display: block; /* Mostrando a barra de pesquisa quando a classe .show é adicionada */
+}
+
+.search-bar input[type="text"] {
+  border: none; /* Removendo borda padrão do input */
+  outline: none; /* Removendo outline ao focar */
+  padding: 8px; /* Adicionando preenchimento dentro do input */
+  width: 200px; /* Definindo largura do input */
+}
+
+.search-bar input[type="submit"] {
+  cursor: pointer; /* Mudando o cursor para ponteiro ao passar por cima */
+  background-color: #4CAF50; /* Definindo cor de fundo */
+  color: white; /* Definindo cor do texto */
+  border: none; /* Removendo borda padrão */
+  outline: none; /* Removendo outline ao focar */
+  padding: 8px 15px; /* Adicionando preenchimento dentro do botão */
+}
+
+/* Estilo para a navbar */
+.navbar {
+  display: flex; /* Exibindo itens da navbar como flex items */
+  justify-content: center; /* Centralizando itens horizontalmente */
+  overflow: hidden; /* Escondendo overflow */
+  background-color: #ffffff; /* Definindo cor de fundo */
+  position: fixed; /* Fixando a posição da navbar */
+  top: 79px; /* Posicionando 79px abaixo do topo */
+  width: 100%; /* Fazendo a navbar ocupar toda a largura */
+  border: 3px solid black; /* Adicionando borda */
+  text-align: center; /* Centralizando texto dentro da navbar */
+}
+
+.navbar a {
+  display: block; /* Exibindo links da navbar como blocos */
+  color: rgb(0, 0, 0); /* Definindo cor do texto */
+  text-align: center; /* Centralizando texto */
+  padding: 14px 140px; /* Adicionando preenchimento ao redor do texto */
+  text-decoration: none; /* Removendo sublinhado dos links */
+  font-size: 18px; /* Definindo tamanho da fonte */
+}
+
+.navbar a:hover {
+  background-color: #ddd; /* Cor de fundo ao passar por cima */
+  color: black; /* Cor do texto ao passar por cima */
+}
+
+/* Estilo para o elemento main */
+main {
+  display: flex; /* Exibindo conteúdo principal como itens flexíveis */
+  flex-direction: row-reverse; /* Invertendo a direção dos itens flexíveis */
+  justify-content: space-between; /* Distribuindo espaço entre os itens */
+  gap: 25rem; /* Definindo espaçamento entre os itens */
+  font-size: 1.5rem; /* Definindo tamanho da fonte para o conteúdo principal */
+}
+
+/* Estilo para imagens dentro de main */
+main img {
+  width: 25rem; /* Ajustando a largura das imagens */
+  height: auto; /* Permitindo ajuste automático da altura */
+}
+
+/* Estilo para h3 e h4 */
+h3, h4 {
+  font-weight: 250; /* Definindo peso da fonte para h3 e h4 */
+}
