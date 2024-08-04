@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIOR - Store</title>
     <link rel="stylesheet" href="/Css/productDesc.css">
+    <script src="../js/acessibProductDesc.js" defer></script>
 </head>
 <body>
     <div class="logo">
@@ -15,12 +16,15 @@
         <div class="search-bar">
             <input type="text" id="search-bar" placeholder="Digite o que procura...">
         </div>
+
         <div class="atalhos">
             <img src="/Imagens/Atalhos.png" alt="at">
         </div>
+
         <div class="defic">
-            <img src="/Imagens/defic.png" alt="def">
+            <img src="/Imagens/defic.png" alt="def" id="defic-img">
         </div>
+
     </div>
 
     <div class="navbar">
@@ -31,10 +35,29 @@
         <b><a href="#sobre">Sobre DIOR</a></b>
     </div>
 
+    <script>
+        function toggleSearchBar() {
+            const searchBar = document.querySelector('.search-bar');
+            searchBar.classList.toggle('show');
+        }
+    </script>
+
+    <div id="defic-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Acessibilidade</h1>
+            <h2>Configure o tamanho das letras para que fiquem de seu agrado:</h2>
+            <button class="A1">A</button>
+            <button class="A2">A</button>
+            <button class="A3">A</button>
+
+
+        </div>
+    </div>
     <main>
         <div class="textos">
-            <h1><b>Descrição</b></h1>
-            <p>A bruma perfumada para o cabelo La Collection Privée
+            <h1 class="produtoDescH1"><b>Descrição</b></h1>
+            <p class="produtoDescP">A bruma perfumada para o cabelo La Collection Privée
                 Christian Dior envolve o cabelo nas notas florais e
                 almiscaradas de Rose Kabuki, sublimando-o com um luminoso
                 véu de beleza. Num gesto elegante, a bruma perfumada realça
@@ -51,7 +74,7 @@
         </div>
 
 <div class="dcapl">
-<h2>Dicas de aplicação:</h2>
+<h2 class="produtoDescH2">Dicas de aplicação:</h2>
 </div>
 
 
@@ -65,11 +88,6 @@
         <img src="/Imagens/chat.png" alt="chat">
     </div>
 
-    <script>
-        function toggleSearchBar() {
-            const searchBar = document.querySelector('.search-bar');
-            searchBar.classList.toggle('show');
-        }
-    </script>
+
 </body>
 </html>

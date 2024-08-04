@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIOR - Store</title>
+    <title>DIOR - Seu carrinho</title>
     <link rel="stylesheet" href="/Css/carrinho.css">
+    <script src="../js/acessibCarrinho.js" defer></script>
 </head>
 <body>
     <div class="logo">
@@ -15,12 +16,15 @@
         <div class="search-bar">
             <input type="text" id="search-bar" placeholder="Digite o que procura...">
         </div>
+
         <div class="atalhos">
             <img src="/Imagens/Atalhos.png" alt="at">
         </div>
+
         <div class="defic">
-            <img src="/Imagens/defic.png" alt="def">
+            <img src="/Imagens/defic.png" alt="def" id="defic-img">
         </div>
+
     </div>
 
     <div class="navbar">
@@ -32,24 +36,43 @@
     </div>
 
 
+    <script>
+        function toggleSearchBar() {
+            const searchBar = document.querySelector('.search-bar');
+            searchBar.classList.toggle('show');
+        }
+    </script>
+
+
+
+<div id="defic-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Acessibilidade</h1>
+        <h2>Configure o tamanho das letras para que fiquem de seu agrado:</h2>
+        <button class="A1">A</button>
+        <button class="A2">A</button>
+        <button class="A3">A</button>
+
+
+    </div>
+</div>
+
 
     <div class="dcapl">
-        <h1>carrinho:</h1>
+        <h1 class="carrinhoH1Carrinho">Carrinho:</h1>
         </div>
     
-            </main>
-            <div class="setinha">
-                <img src="../Imagens/Setinha.png" alt="setinha">
-            </div>
+
     <main>
 
         <div class="textos">
-            <h1><b>Rose Kabuki</b></h1>
-            <h3>Bruma perfumada para cabelo</h3>
+            <h1 class="carrinhoH1Product"><b>Rose Kabuki</b></h1>
+            <h3 class="carrinhoH3Desc">Bruma perfumada para cabelo</h3>
                 <div class="prçimg">
 
                     <img src="../Imagens/heart.png" alt="Stars">
-                    <h2>R$ 779,00</h2>
+                    <h2 class="carrinhoH2Price">R$ 779,00</h2>
                 </div>
             <div>
                 <a href="#">
@@ -67,11 +90,5 @@
         <img src="/Imagens/chat.png" alt="chat">
     </div>
 
-    <script>
-        function toggleSearchBar() {
-            const searchBar = document.querySelector('.search-bar');
-            searchBar.classList.toggle('show');
-        }
-    </script>
 </body>
 </html>
